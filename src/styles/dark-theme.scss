@@ -46,13 +46,23 @@ body.dark {
 
   .thumbnail {
     h3 {
+      display: inline-block;
       color: $dark-light-font-color;
+
+      &::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: black;
+        transition: 0.3s;
+      }
     }
     p {
       color: $dark-middle-font-color;
     }
-    &:hover {
-      text-shadow: $dark-hover-text-shadow;
+    &:hover h3::after {
+      width: 100%;
     }
   }
 

@@ -45,13 +45,23 @@ body.light {
 
   .thumbnail {
     h3 {
+      display: inline-block;
       color: $dark-gray;
+
+      &::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: black;
+        transition: 0.3s;
+      }
     }
     p {
       color: $middle-gray;
     }
-    &:hover {
-      text-shadow: $light-hover-text-shadow;
+    &:hover h3::after {
+      width: 100%;
     }
   }
 
