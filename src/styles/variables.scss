@@ -1,7 +1,7 @@
 // app
-$elixir-color: #8e58cb;
-$fsharp-color: #028fcc;
-$theme-gradient: linear-gradient(72deg, #291e95, #cc007a);
+$elixir-color: #5204ac;
+$fsharp-color: #006caa;
+$theme-gradient: linear-gradient(72deg, $elixir-color, $fsharp-color);
 $top-header-text-color: #fff;
 
 /**
