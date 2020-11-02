@@ -1,10 +1,10 @@
 module.exports = {
-  title: `Func`,
-  description: `Blog posted about ...`,
+  title: `Functional stuff`,
+  description: `My blog where I write about code and stuff.`,
   authorName: `Elvis`,
   author: `Elvis Melkić`,
   introduction: `This is my personal blog where I write about code and stuff. My main insterests are Elixir, F# and databases (mainly Postgres).`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://cranky-turing-51014e.netlify.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `elvismelkic`, // Your GitHub account
