@@ -4,7 +4,7 @@ module.exports = {
   authorName: `Elvis`,
   author: `Elvis Melkić`,
   introduction: `This is my personal blog where I write about code and stuff. My main insterests are Elixir, F# and databases (mainly Postgres).`,
-  siteUrl: `https://cranky-turing-51014e.netlify.app/`, // Your blog site url
+  siteUrl: `https://www.elvismelkic.com/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `elvismelkic`, // Your GitHub account
