@@ -59,3 +59,11 @@ The next course I wound up taking (also through Reddit’s recommendation) was J
 
 On this journey, I found that a lot of us want to learn as much as possible for free. Nothing wrong with that. Totally understandable. But maybe you noticed that at one point I switched from free content to paid content. I didn’t regret a dime. The step up in quality is quite noticeable and I think it’s definitely a worthy investment. I set a budget for myself that was equal to one average entry-level developer monthly salary. I believe if you can acquire knowledge that will get you a job and return the investment in one month, you’ve got yourself a pretty neat deal. The courses on Udemy are between 12 and 20 euros on discounts, which are offered quite often.  
 I’m not calling anyone out nor criticizing people for wanting to learn for free. I did so myself for some time. And I started this blog with the goal of sharing what I learn along the way. But I would just like to point out that paying for courses can be worth it, so give it a shot if you can.
+
+## Conclusion
+
+In this part of 'My journey to coding', I covered the learning segment. I went over the resources which helped me along the way and I hope some of those will help you, too. You saw how many times I quit and got back to it again, so it's never too late to make the final decision!
+
+In the next part, I'll talk about job interviews and how they went, how I finaly landed my first job as a developer, and how I'm liking it so far. I'll also share some advice regarding job interviews, which I believe could help you in landing your first job.
+
+Have a nice day and see you soon! :)
