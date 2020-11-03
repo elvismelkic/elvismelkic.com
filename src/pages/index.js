@@ -25,7 +25,13 @@ export default ({ data, location }) => {
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const categories = useMemo(
-    () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
+    () => _.uniq([
+      ...posts
+      .map(({ node }) => node.frontmatter.category)
+      .filter(category => category !== 'Misc')
+      .sort(),
+      'Misc'
+    ]),
     []
   )
   const [count, countRef, increaseCount] = useRenderedCount()
