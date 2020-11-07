@@ -64,6 +64,6 @@ I'm not calling anyone out nor criticizing people for wanting to learn for free.
 
 In this part of 'My journey to coding', I covered the learning segment. I went over the resources which helped me along the way and I hope some of those will help you, too. You saw how many times I quit and got back to it again, so it's never too late to make the final decision!
 
-In the next part, I'll talk about job interviews and how they went, how I finaly landed my first job as a developer, and how I'm liking it so far. I'll also share some advice regarding job interviews, which I believe could help you in landing your first job.
+In the next part, I'll talk about job interviews and how they went, how I finaly landed my first job as a developer, and how I'm liking it so far. I'll also share some advice regarding job interviews, which I believe could help you in landing your first job. In the meantime, if you have any questions, comments, advice, or anything of that sort, feel free to ask, post, critique, etc. I'll give my best to reply to or read all of them.
 
 Have a nice day and see you soon! :)
