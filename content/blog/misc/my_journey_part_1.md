@@ -1,5 +1,5 @@
 ---
-title: 'My journey to coding - Part 1: Learning'
+title: 'My journey to coding — Part 1: Learning'
 summary: "If you're thinking of embarking on a road to become a developer, you can read this post to see how it went for me. It was a long journey, but it paid off in the end. At the end of the post, I list the resources I learned from, so feel free to check them out. Just keep in mind that things move forward quickly in web development, so some of those might be outdated."
 date: 2020-11-03 20:48:15
 category: 'Misc'
