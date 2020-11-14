@@ -27,7 +27,8 @@ export default ({ data, location }) => {
   const categories = useMemo(
     () => _.uniq([
       ...posts
-      .map(({ node }) => node.frontmatter.category)
+      .map(({ node }) => node.frontmatter.category.split(', '))
+      .flat()
       .filter(category => category !== 'Misc')
       .sort(),
       'Misc'
