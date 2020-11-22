@@ -32,7 +32,7 @@ sum_up_to(5)
 -> 15
 ```
 
-As you can see, not a single function call can get resolved until we get to the base case, at which point, we start going backwards, summing the numbers along the way. Now, imagine if we passed one million as an argument. Or one billion. Or any other huge number. We'd run into what's called a stack overflow. Our function calls would stack up on one another, and we would reach the limit of the number of elements our stack can take. In other words, we'd run out of memory. The unfortunate result of that is our program crashing.
+As you can see, not a single function call can get resolved until we get to the base case, at which point, we start going backwards, summing the numbers along the way. Now, imagine if we passed one million as an argument. Or one billion. Or [billions and billions](https://www.youtube.com/watch?list=FLOJxNAR3EV9qIO1zbcwEaoA&v=u_aLESDql1U). Or any other huge number. We'd run into what's called a stack overflow. Our function calls would stack up on one another, and we would reach the limit of the number of elements our stack can take. In other words, we'd run out of memory. The unfortunate result of that is our program crashing.
 
 This simple example probably isn't something you would face in the real world, but having a data structure so large that it causes a stack overflow when you recursively iterate over it could really happen. It happened at my job.
 
