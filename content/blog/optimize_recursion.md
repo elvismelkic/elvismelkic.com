@@ -67,9 +67,9 @@ defp do_sum(current_sum, n), do: do_sum(current_sum + n, n - 1)
 
 Since we're not building up a stack, but rather replacing the current element, it's somewhat expected for our code to perform better. And here it does. But, as we'll see, things are not always so straightforward.
 
-## Rewriting _Enum.map/2_ using tail-recursion
+## Rewriting _Enum.map/2_ using tail recursion
 
-Next, we'll write an equivalent of `Enum.map/2` using tail-recursion. Before we do that, let's see how it would look using regular recursion.
+Next, we'll write an equivalent of `Enum.map/2` using tail recursion. Before we do that, let's see how it would look using body recursion.
 
 ```elixir
 def our_map([], _fun), do: []
@@ -106,12 +106,12 @@ defp do_reverse(acc, []), do: acc
 defp do_reverse(acc, [head | tail]), do: do_reverse([head | acc], tail)
 ```
 
-As you can imagine, iterating over a set of data twice is not the most efficient thing to do. So it turns out that tail-recursion shouldn't always be a go-to solution. As a matter of fact, it's one of [the seven myths about Erlang's performance](http://erlang.org/doc/efficiency_guide/myths.html). It's best to assess the kind of data we're dealing with and go from there.
+As you can imagine, iterating over a set of data twice is not the most efficient thing to do. So it turns out that tail recursion shouldn't always be a go-to solution. As a matter of fact, it's one of [the seven myths about Erlang's performance](http://erlang.org/doc/efficiency_guide/myths.html). It's best to assess the kind of data we're dealing with and go from there.
 
 ## Conclusion
 
-Whenever we're dealing with iterating over a particularly large set of data, tail-recursion might be an appropriate solution to avoid memory issues. But, as we saw, it's not the be-all and end-all solution.
+Whenever we're dealing with iterating over a particularly large set of data, tail recursion might be an appropriate solution to avoid memory issues. But, as we saw, it's not the be-all and end-all solution.
 
-So, the question remains: when should you use tail-optimization and when is it OK to settle for a regular recursion? As a colleague of mine said to me once, and as it says in the article about seven myths: "Use the one which is more readable. More often than not, it's a non-tail version." Of course, presuming you don't run out of memory. But that goes without saying. :)
+So, the question remains: when should you use tail-optimization and when is it OK to settle for a body recursion? As a colleague of mine said to me once, and as it says in the article about seven myths: "Use the one which is more readable. More often than not, it's a non-tail version." Of course, presuming you don't run out of memory. But that goes without saying. :)
 
 I hope this post will help you not run out of your memory. As always, if you see a mistake or a place for improvement, feel free to let me know in the comments. Thanks for reading and have a nice day! :)
