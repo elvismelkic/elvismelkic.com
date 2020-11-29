@@ -6,7 +6,7 @@ category: 'Misc'
 draft: false
 ---
 
-After sharing with you in [my previous post](/my_journey_part_1/) how my learning part of the journey went, in this one I'll talk about my experience with the interviews, how I landed my first job, and how I'm liking it so far. As in the first part, where I shared the resources I believe could help you in your learning part, here I'll share some advice regarding the interviews. I hope they'll be of use to you.
+After sharing with you in [my previous post](/my-journey-part-1/) how my learning part of the journey went, in this one I'll talk about my experience with the interviews, how I landed my first job, and how I'm liking it so far. As in the first part, where I shared the resources I believe could help you in your learning part, here I'll share some advice regarding the interviews. I hope they'll be of use to you.
 
 So, without further ado, let's pick up where we left off.
 
