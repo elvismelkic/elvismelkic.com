@@ -152,4 +152,4 @@ Still, I would always opt for doing all the assertions at the end of the test. N
 
 ## Conclusion
 
-In this article we’ve learned how to test the file's content if we don't have a designated module for generating files. I hope you'll find it useful and that it will help you produce better test coverage of your code. Thank you for reading and have a nice day! :)
+In this article we’ve learned how to test the file's content if we don't have a designated module for generating files. I hope you'll find it useful and that it will help you produce better test coverage of your code. As always, if you see a mistake or a place for improvement, feel free to let me know in the comments. Thank you for reading and have a nice day! :)
