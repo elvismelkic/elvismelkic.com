@@ -76,13 +76,13 @@ Let’s break it down.
 
 First, we generate some data, nothing special there. Then we bind our test’s PID to a variable, after which we stub our `upload/1` function. Now, here comes the important part. Our stubbed function receives the file (in this case it’s just a content in the form of a string), which we send back to the test using its PID we bound earlier. Back in the test, we call `store_to_s3/1`, which will internally call our stubbed function, and then we use `assert_received/2` to assert that we’ve received the message with the content. After that, we assert the content of our file.
 
-## Why not assert in stubs?
+## Why not assert in mocks?
 
 While I was writing this post, I started to wonder “Hey, why send the content? Why not simply assert it inside the mock function?” The only reason that came to my mind is that you would want to have all your assertions at the end of the test (the so-called [AAA pattern](https://medium.com/@pjbgf/title-testing-code-ocd-and-the-aaa-pattern-df453975ab80)). If you ask me, code aesthetics is a good enough reason in itself, but I wanted to know if it makes any difference at the execution level. So I asked a (much) more knowledgeable colleague of mine.
 
 As it turns out, the main thing we want to make sure is that our mock function gets called. If we do our assertions inside the mock, and the mock doesn’t get called during the test, the test could still pass. By sending the content back to the test and asserting that we’ve received it, we’re making sure that our mock gets called. There is also another way to do this. We can replace `stub/3` with `expect/4`, and call `verify!/0` after our mock gets called (or `verify_on_exit!/1` anywhere in the test). That way, we’ll ensure that the test will fail if our mock doesn’t get called, making it able to do our assertions inside the mock function.
 
-Altering our previous example, it would look something like this:
+Using our previous example, it would look something like this:
 
 ```elixir
 # ...
