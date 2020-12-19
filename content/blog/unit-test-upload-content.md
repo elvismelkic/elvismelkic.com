@@ -1,6 +1,6 @@
 ---
 title: "How to unit test the content we're uploading"
-summary: "In this post we'll see how to test the content of the files we're uploading, and thus increase the test coverage of our code."
+summary: "In this post we'll see how to leverage Elixir processes' messaging system to test the content of the files we're uploading."
 date: 2020-12-18 22:48:15
 category: 'Elixir'
 draft: false
